@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TECHNOAGRICPRA (PVT) LTD | Precision Agricultural Extension, Livestock &amp; AgriTech in Zimbabwe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            forest: '#0B2A1F',
+            deepgreen: '#0F3D2A',
+            limebrand: '#7ED321',
+            mintlight: '#E8F3EC',
+            mintsoft: '#F4FAF6',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: #0B2A1F;
+      background-color: #FFFFFF;
+      overflow-x: hidden;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-limebrand selection:text-forest">
+
+  <!-- 1. STICKY CORPORATE NAVIGATION BAR -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-emerald-900/10 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <!-- Brand Identity -->
+        <a href="#home" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 rounded-xl bg-forest text-limebrand flex items-center justify-center font-extrabold text-xl shadow-sm group-hover:scale-105 transition">
+            <i class="fa-solid fa-seedling"></i>
+          </div>
+          <div>
+            <span class="block font-extrabold text-base sm:text-lg tracking-tight leading-none text-forest">TECHNOAGRICPRA</span>
+            <span class="block text-[11px] font-bold tracking-wider text-deepgreen uppercase mt-0.5">TECHNOAGRI PRECISION (PVT) LTD</span>
+          </div>
+        </a>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-700">
+          <a href="#home" class="hover:text-deepgreen transition">Home</a>
+          <a href="#about" class="hover:text-deepgreen transition">About Us</a>
+          <a href="#services" class="hover:text-deepgreen transition">Services</a>
+          <a href="#agripot" class="hover:text-deepgreen transition">AGRIPOT Platform</a>
+          <a href="#leadership" class="hover:text-deepgreen transition">Leadership</a>
+          <a href="#contact" class="hover:text-deepgreen transition">Contact</a>
+        </nav>
+
+        <!-- Desktop CTA Button -->
+        <div class="hidden md:flex items-center gap-3">
+          <a href="#contact" class="px-5 py-2.5 rounded-xl bg-forest text-limebrand text-xs sm:text-sm font-extrabold hover:bg-deepgreen transition shadow-sm">
+            Request Consultation
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobileMenuBtn" aria-label="Toggle navigation menu" class="lg:hidden p-2.5 rounded-xl bg-mintlight text-forest border border-emerald-200">
+          <i class="fa-solid fa-bars text-lg"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-t border-emerald-100 px-4 pt-3 pb-5 space-y-2 shadow-lg">
+      <a href="#home" class="block py-2 px-3 rounded-lg text-sm font-semibold text-forest hover:bg-mintsoft">Home</a>
+      <a href="#about" class="block py-2 px-3 rounded-lg text-sm font-semibold text-forest hover:bg-mintsoft">About Us</a>
+      <a href="#services" class="block py-2 px-3 rounded-lg text-sm font-semibold text-forest hover:bg-mintsoft">Services</a>
+      <a href="#agripot" class="block py-2 px-3 rounded-lg text-sm font-semibold text-forest hover:bg-mintsoft">AGRIPOT Platform</a>
+      <a href="#leadership" class="block py-2 px-3 rounded-lg text-sm font-semibold text-forest hover:bg-mintsoft">Leadership</a>
+      <a href="#contact" class="block py-2 px-3 rounded-lg text-sm font-semibold text-forest hover:bg-mintsoft">Contact</a>
+      <a href="#contact" class="block mt-3 text-center py-3 rounded-xl bg-forest text-limebrand font-extrabold text-sm">
+        Request Consultation
+      </a>
+    </div>
+  </header>
+
+  <!-- 2. CORPORATE HERO SECTION -->
+  <section id="home" class="bg-forest text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Left Welcome & Value Proposition -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-deepgreen border border-emerald-700/80">
+            <span class="w-2 h-2 rounded-full bg-limebrand"></span>
+            <span class="text-xs font-extrabold tracking-wider uppercase text-limebrand">
+              Marondera, Mashonaland East • Zimbabwe
+            </span>
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.14]">
+            Practical Field Agronomy, Livestock Science &amp; <span class="text-limebrand">Smart AgriTech</span> for Zimbabwean Farmers.
+          </h1>
+
+          <p class="text-base sm:text-lg text-emerald-100/90 leading-relaxed max-w-2xl">
+            <strong class="text-white">TECHNOAGRICPRA (PVT) LTD</strong> (operating as <strong class="text-white">TECHNOAGRI PRECISION</strong>) empowers smallholder and commercial producers with hands-on private extension services, climate-smart crop and livestock advisory, reliable rural supply chains, and our digital <strong class="text-limebrand">AGRIPOT</strong> platform.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <a href="#services" class="px-6 py-3.5 rounded-xl bg-limebrand text-forest font-extrabold text-sm sm:text-base hover:bg-lime-400 transition shadow-md">
+              Explore Our Services <i class="fa-solid fa-arrow-right ml-2"></i>
+            </a>
+            <a href="#agripot" class="px-6 py-3.5 rounded-xl bg-deepgreen border border-emerald-700 text-white font-bold text-sm sm:text-base hover:border-limebrand transition">
+              Discover AGRIPOT
+            </a>
+          </div>
+
+          <!-- Corporate Trust Pillars -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-emerald-800/80">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-deepgreen text-limebrand flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-user-check"></i>
+              </div>
+              <div>
+                <p class="text-sm font-extrabold text-white">Field-First Advisory</p>
+                <p class="text-xs text-emerald-200/80">Dedicated ward officers</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-deepgreen text-limebrand flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-cow"></i>
+              </div>
+              <div>
+                <p class="text-sm font-extrabold text-white">Crops &amp; Livestock</p>
+                <p class="text-xs text-emerald-200/80">Integrated farm support</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-deepgreen text-limebrand flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+              </div>
+              <div>
+                <p class="text-sm font-extrabold text-white">AGRIPOT Digital</p>
+                <p class="text-xs text-emerald-200/80">Inputs, logs &amp; markets</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Visual Showcase -->
+        <div class="lg:col-span-5">
+          <div class="bg-deepgreen border border-emerald-700/80 rounded-2xl p-4 sm:p-5 shadow-2xl space-y-4">
+            <div class="relative rounded-xl overflow-hidden h-72 sm:h-80 bg-forest">
+              <img
+                src="https://climatepromise.undp.org/sites/default/files/styles/large_2x/public/news/Lethiwe-Moyo-Lead-Farmer-in-a-sorghum-field-of-good-condition-Credit-Anesu-Freddy-UNDP-Zimbabwe.jpg?itok=sXNsdJ-T"
+                onerror="this.src='https://placehold.co/640x480/0F3D2A/7ED321?text=TECHNOAGRICPRA+Field+Extension'"
+                alt="Zimbabwean farmer inspecting healthy crops in Mashonaland East"
+                class="w-full h-full object-cover"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-forest/85 via-transparent to-transparent"></div>
+              <div class="absolute bottom-4 left-4 right-4 text-white">
+                <span class="inline-block px-2.5 py-1 rounded-lg bg-limebrand text-forest text-[11px] font-extrabold uppercase mb-1.5">
+                  Sustainable Productivity
+                </span>
+                <p class="text-sm font-bold leading-snug">
+                  Supporting farmers across Mashonaland East with verified inputs, practical extension, and reliable market linkages.
+                </p>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3 text-xs">
+              <div class="bg-forest/90 border border-emerald-800 rounded-xl p-3.5">
+                <p class="font-extrabold text-limebrand uppercase mb-0.5">Headquarters</p>
+                <p class="text-emerald-100 font-semibold">Marondera, Zimbabwe</p>
+              </div>
+              <div class="bg-forest/90 border border-emerald-800 rounded-xl p-3.5">
+                <p class="font-extrabold text-limebrand uppercase mb-0.5">Registered Entity</p>
+                <p class="text-emerald-100 font-semibold">No. 119164A0562026</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. ABOUT US SECTION -->
+  <section id="about" class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Left Company Story -->
+        <div class="lg:col-span-6 space-y-6">
+          <div>
+            <p class="text-xs font-extrabold uppercase tracking-widest text-deepgreen mb-2">About TECHNOAGRICPRA (PVT) LTD</p>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-forest leading-tight">
+              Bridging Hands-On Field Expertise with Modern Agricultural Technology.
+            </h2>
+          </div>
+
+          <p class="text-base text-slate-700 leading-relaxed">
+            Headquartered in <strong class="text-forest">Marondera, Mashonaland East Province</strong>, <strong class="text-forest">TECHNOAGRICPRA (PVT) LTD</strong> (trading as <strong class="text-forest">TECHNOAGRI PRECISION</strong>) is a Zimbabwean agricultural services and technology company dedicated to improving farm productivity, resilience, and market readiness.
+          </p>
+
+          <p class="text-base text-slate-700 leading-relaxed">
+            We believe technology only succeeds in rural agriculture when paired with trusted human presence on the ground. Our field officers work directly alongside farmers—delivering practical agronomy, livestock management, and soil testing while equipping farms with simple digital tools to track inputs, manage records, and connect with formal buyers.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            <div class="bg-mintsoft border border-emerald-200 rounded-2xl p-4">
+              <div class="w-9 h-9 rounded-lg bg-forest text-limebrand flex items-center justify-center mb-2.5">
+                <i class="fa-solid fa-bullseye"></i>
+              </div>
+              <h3 class="text-sm font-extrabold text-forest mb-1">Our Mission</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                To equip Zimbabwean farmers with accessible extension expertise, quality inputs, and transparent digital farm records that unlock sustainable yields and formal economic participation.
+              </p>
+            </div>
+            <div class="bg-mintsoft border border-emerald-200 rounded-2xl p-4">
+              <div class="w-9 h-9 rounded-lg bg-deepgreen text-limebrand flex items-center justify-center mb-2.5">
+                <i class="fa-solid fa-handshake"></i>
+              </div>
+              <h3 class="text-sm font-extrabold text-forest mb-1">Our Approach</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Combining local field officers, community Village Hubs, and cargo-tricycle logistics with offline-capable mobile and SMS advisory tools.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Operational Highlights Card -->
+        <div class="lg:col-span-6">
+          <div class="bg-mintlight border-2 border-deepgreen rounded-3xl p-6 sm:p-8 space-y-6">
+            <div class="flex items-center justify-between border-b border-emerald-300 pb-4">
+              <div>
+                <span class="text-xs font-extrabold uppercase tracking-wider text-deepgreen">Why Farmers &amp; Partners Choose Us</span>
+                <h3 class="text-xl font-extrabold text-forest mt-0.5">The TECHNOAGRI PRECISION Standard</h3>
+              </div>
+              <div class="w-12 h-12 rounded-2xl bg-forest text-limebrand flex items-center justify-center text-xl">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+            </div>
+
+            <div class="space-y-4">
+              <div class="bg-white rounded-2xl p-4 border border-emerald-200 flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl bg-mintsoft text-deepgreen flex items-center justify-center shrink-0 mt-0.5">
+                  <i class="fa-solid fa-leaf"></i>
+                </div>
+                <div>
+                  <h4 class="text-sm font-extrabold text-forest">Practical Agronomy &amp; Animal Science</h4>
+                  <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                    Actionable crop nutrition, pest management, pasture planning, and herd health protocols tailored to Zimbabwe’s agro-ecological regions.
+                  </p>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-2xl p-4 border border-emerald-200 flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl bg-mintsoft text-deepgreen flex items-center justify-center shrink-0 mt-0.5">
+                  <i class="fa-solid fa-truck-fast"></i>
+                </div>
+                <div>
+                  <h4 class="text-sm font-extrabold text-forest">Last-Mile Rural Delivery &amp; Aggregation</h4>
+                  <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                    Shared cargo tricycle rounds and community collection points reduce transport costs for both farm inputs and harvested produce.
+                  </p>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-2xl p-4 border border-emerald-200 flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl bg-mintsoft text-deepgreen flex items-center justify-center shrink-0 mt-0.5">
+                  <i class="fa-solid fa-file-invoice"></i>
+                </div>
+                <div>
+                  <h4 class="text-sm font-extrabold text-forest">Verifiable Farm Histories</h4>
+                  <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                    Structured farm activity and transaction records that help farmers track seasonal profitability and demonstrate credit readiness to partner institutions.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. CORE SERVICES GRID -->
+  <section id="services" class="py-16 md:py-24 bg-mintsoft border-y border-emerald-900/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <div class="max-w-3xl">
+        <p class="text-xs font-extrabold uppercase tracking-widest text-deepgreen mb-2">Core Agricultural Services</p>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-forest leading-tight">
+          End-to-End Field, Livestock &amp; Supply Chain Solutions
+        </h2>
+        <p class="text-base text-slate-700 mt-3 leading-relaxed">
+          We support individual farmers, cooperatives, agribusinesses, and development projects with practical technical services designed for measurable farm-level results.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+        <!-- Service 1 -->
+        <div class="bg-white border border-emerald-200 rounded-2xl p-6 sm:p-8 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-forest text-limebrand flex items-center justify-center text-xl mb-5">
+              <i class="fa-solid fa-person-walking-luggage"></i>
+            </div>
+            <h3 class="text-xl font-extrabold text-forest mb-3">Private Agricultural Extension &amp; Field Advisory</h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-4">
+              Dedicated ward-level field officers provide regular on-farm visits, crop scouting, planting supervision, and seasonal production planning to bridge the rural extension gap.
+            </p>
+            <ul class="space-y-2 text-xs sm:text-sm text-slate-700">
+              <li><i class="fa-solid fa-circle-check text-deepgreen mr-2"></i>On-farm crop diagnostics &amp; agronomic follow-ups</li>
+              <li><i class="fa-solid fa-circle-check text-deepgreen mr-2"></i>Field demonstrations &amp; farmer training workshops</li>
+              <li><i class="fa-solid fa-circle-check text-deepgreen mr-2"></i>Digital farm profiling &amp; GPS acreage mapping</li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-4 border-t border-emerald-100">
+            <a href="#contact" class="text-xs font-extrabold text-deepgreen hover:text-forest inline-flex items-center gap-1.5">
+              Schedule Field Advisory <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="bg-white border border-emerald-200 rounded-2xl p-6 sm:p-8 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-deepgreen text-limebrand flex items-center justify-center text-xl mb-5">
+              <i class="fa-solid fa-cow"></i>
+            </div>
+            <h3 class="text-xl font-extrabold text-forest mb-3">Livestock Production &amp; Animal Health Management</h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-4">
+              Comprehensive herd and flock management advisory for cattle, goats, poultry, and piggery enterprises—focused on disease prevention, nutrition, and breeding performance.
+            </p>
+            <ul class="space-y-2 text-xs sm:text-sm text-slate-700">
+              <li><i class="fa-solid fa-circle-check text-deepgreen mr-2"></i>Vaccination schedules, dipping &amp; biosecurity plans</li>
+              <li><i class="fa-solid fa-circle-check text-deepgreen mr-2"></i>Feed formulation, fodder production &amp; grazing management</li>
+              <li><i class="fa-solid fa-circle-check text-deepgreen mr-2"></i>Linkages to vetted veterinary inputs &amp; livestock buyers</li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-4 border-t border-emerald-100">
+            <a href="#contact" class="text-xs font-extrabold text-deepgreen hover:text-forest inline-flex items-center gap-1.5">
+              Request Livestock Consultation <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="bg-white border border-emerald-200 rounded-2xl p-6 sm:p-8 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-deepgreen text-limebrand flex items-center justify-center text-xl mb-5">
+              <i class="fa-solid fa-wheat-awn"></i>
+            </div>
+            <h3 class="text-xl font-extrabold text-forest mb-3">Climate-Smart Crop &amp; Horticulture Consulting</h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-4">
+              Resilient production systems for maize, soya beans, groundnuts, sorghum, and high-value horticulture crops built to withstand erratic rainfall and soil degradation.
+            </p>
+            <ul class="space-y-2 text-xs sm:text-sm text-slate-700">
+              <li><i class="fa-solid fa-circle-check text-deepgreen mr-2"></i>Soil sampling, pH correction &amp; precision fertiliser guidance</li>
+              <li><i class="fa-solid fa-circle-check text-deepgreen mr-2"></i>Conservation agriculture, moisture retention &amp; drought-tolerant varieties</li>
+              <li><i class="fa-solid fa-circle-check text-deepgreen mr-2"></i>Integrated pest &amp; disease management (IPM)</li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-4 border-t border-emerald-100">
+            <a href="#contact" class="text-xs font-extrabold text-deepgreen hover:text-forest inline-flex items-center gap-1.5">
+              Book Crop &amp; Soil Consulting <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="bg-white border border-emerald-200 rounded-2xl p-6 sm:p-8 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-forest text-limebrand flex items-center justify-center text-xl mb-5">
+              <i class="fa-solid fa-truck-pickup"></i>
+            </div>
+            <h3 class="text-xl font-extrabold text-forest mb-3">Rural Supply Chain &amp; Village Hub Logistics</h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-4">
+              Connecting rural farming communities to vetted agrodealers, mechanisation providers, and formal off-takers through coordinated last-mile transport and collection points.
+            </p>
+            <ul class="space-y-2 text-xs sm:text-sm text-slate-700">
+              <li><i class="fa-solid fa-circle-check text-deepgreen mr-2"></i>Shared cargo-tricycle input delivery to farm gates</li>
+              <li><i class="fa-solid fa-circle-check text-deepgreen mr-2"></i>Community Village Hubs for produce weighing, grading &amp; aggregation</li>
+              <li><i class="fa-solid fa-circle-check text-deepgreen mr-2"></i>Tractor tillage, spraying &amp; equipment booking coordination</li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-4 border-t border-emerald-100">
+            <a href="#contact" class="text-xs font-extrabold text-deepgreen hover:text-forest inline-flex items-center gap-1.5">
+              Partner on Supply &amp; Logistics <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. FLAGSHIP DIGITAL PLATFORM SPOTLIGHT: AGRIPOT -->
+  <section id="agripot" class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <!-- Top Banner -->
+      <div class="bg-forest text-white rounded-3xl p-8 sm:p-12 border-2 border-limebrand shadow-xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7 space-y-4">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-deepgreen border border-limebrand/60 text-xs font-extrabold uppercase text-limebrand">
+              <i class="fa-solid fa-microchip"></i> Our Flagship Digital Platform
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold leading-tight">
+              AGRIPOT: Your Farm’s Digital Store, Advisor &amp; Business Record
+            </h2>
+            <p class="text-sm sm:text-base text-emerald-100 leading-relaxed">
+              Built for rural connectivity across Zimbabwe, <strong class="text-white">AGRIPOT</strong> brings together a mobile agro store, last-mile delivery, localized weather and trilingual advisory, digital farm recordkeeping, and marketplace linkages in one simple platform.
+            </p>
+            <div class="pt-2 flex flex-wrap gap-3">
+              <a href="#contact" class="px-5 py-3 rounded-xl bg-limebrand text-forest font-extrabold text-xs sm:text-sm hover:bg-lime-400 transition">
+                Join AGRIPOT Free
+              </a>
+              <span class="px-4 py-3 rounded-xl bg-deepgreen border border-emerald-700 text-xs font-bold text-emerald-100">
+                Works via Smartphone, WhatsApp &amp; Offline SMS
+              </span>
+            </div>
+          </div>
+
+          <!-- Platform Feature Cards -->
+          <div class="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="bg-deepgreen border border-emerald-700 rounded-2xl p-4">
+              <i class="fa-solid fa-basket-shopping text-limebrand text-xl mb-2"></i>
+              <h3 class="text-sm font-extrabold text-white mb-1">Mobile Agro Store &amp; Delivery</h3>
+              <p class="text-xs text-emerald-100/85 leading-relaxed">Browse verified seeds, fertilisers, and vet supplies with shared last-mile delivery.</p>
+            </div>
+            <div class="bg-deepgreen border border-emerald-700 rounded-2xl p-4">
+              <i class="fa-solid fa-language text-limebrand text-xl mb-2"></i>
+              <h3 class="text-sm font-extrabold text-white mb-1">Trilingual AI Advisory</h3>
+              <p class="text-xs text-emerald-100/85 leading-relaxed">Practical crop, livestock, and climate guidance in English, Shona, and Ndebele.</p>
+            </div>
+            <div class="bg-deepgreen border border-emerald-700 rounded-2xl p-4">
+              <i class="fa-solid fa-book-open text-limebrand text-xl mb-2"></i>
+              <h3 class="text-sm font-extrabold text-white mb-1">Digital Farm Records</h3>
+              <p class="text-xs text-emerald-100/85 leading-relaxed">Track expenses, harvests, and seasonal margins—plus consent-based credit profiles.</p>
+            </div>
+            <div class="bg-deepgreen border border-emerald-700 rounded-2xl p-4">
+              <i class="fa-solid fa-handshake text-limebrand text-xl mb-2"></i>
+              <h3 class="text-sm font-extrabold text-white mb-1">Market &amp; Finance Links</h3>
+              <p class="text-xs text-emerald-100/85 leading-relaxed">Connect directly with formal produce off-takers, machinery owners, and partner lenders.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Simple Account Tiers Overview -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-mintsoft border border-emerald-200 rounded-2xl p-6">
+          <span class="text-xs font-extrabold uppercase text-deepgreen">For Smallholder Farmers</span>
+          <h3 class="text-lg font-extrabold text-forest mt-1">Basic Farmer Account — Free</h3>
+          <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+            Register for free to access your digital farm profile, weather updates, trilingual advisory, mobile agro store, last-mile delivery, and basic activity logs.
+          </p>
+        </div>
+        <div class="bg-mintlight border-2 border-deepgreen rounded-2xl p-6">
+          <span class="text-xs font-extrabold uppercase text-forest">For Growth-Oriented Farmers</span>
+          <h3 class="text-lg font-extrabold text-forest mt-1">Premium Farm Management — $5/mo</h3>
+          <p class="text-xs text-forest/90 mt-2 leading-relaxed">
+            Optional upgrade unlocking full multi-season expense &amp; profit analytics, receipt uploads, downloadable farm reports, and priority support.
+          </p>
+        </div>
+        <div class="bg-mintsoft border border-emerald-200 rounded-2xl p-6">
+          <span class="text-xs font-extrabold uppercase text-deepgreen">For Suppliers &amp; Institutions</span>
+          <h3 class="text-lg font-extrabold text-forest mt-1">Agribusiness &amp; Partner Portals</h3>
+          <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+            Agrodealers, logistics operators, cooperatives, and off-takers can list services, manage client portfolios, and streamline rural procurement.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. LEADERSHIP TEAM SECTION -->
+  <section id="leadership" class="py-16 md:py-24 bg-mintsoft border-t border-emerald-900/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+      <div class="max-w-3xl">
+        <p class="text-xs font-extrabold uppercase tracking-widest text-deepgreen mb-2">Our Leadership</p>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-forest leading-tight">
+          Led by Practitioners in Agriculture, Operations &amp; Technology
+        </h2>
+        <p class="text-base text-slate-700 mt-3 leading-relaxed">
+          Our founding team combines hands-on livestock and crop expertise with rural logistics operations and software engineering.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Leader 1 -->
+        <div class="bg-white border border-emerald-200 rounded-2xl p-6 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-forest text-limebrand flex items-center justify-center text-xl mb-4">
+              <i class="fa-solid fa-cow"></i>
+            </div>
+            <h3 class="text-lg font-extrabold text-forest">Mavhunga Zivai Fayol</h3>
+            <p class="text-xs font-extrabold uppercase tracking-wide text-deepgreen mt-1 mb-3">Founder &amp; CEO • Livestock Lead</p>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Leads company strategy, institutional and off-taker partnerships, and livestock production and veterinary advisory programs.
+            </p>
+          </div>
+          <div class="w-10 h-1 bg-limebrand rounded-full mt-5"></div>
+        </div>
+
+        <!-- Leader 2 -->
+        <div class="bg-white border border-emerald-200 rounded-2xl p-6 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-deepgreen text-limebrand flex items-center justify-center text-xl mb-4">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <h3 class="text-lg font-extrabold text-forest">Moyo Brightness P.</h3>
+            <p class="text-xs font-extrabold uppercase tracking-wide text-deepgreen mt-1 mb-3">Co-Founder &amp; COO • QA Lead</p>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Oversees field-agent training and certification, Village Hub operations, and quality assurance across last-mile delivery routes.
+            </p>
+          </div>
+          <div class="w-10 h-1 bg-limebrand rounded-full mt-5"></div>
+        </div>
+
+        <!-- Leader 3 -->
+        <div class="bg-white border border-emerald-200 rounded-2xl p-6 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-forest text-limebrand flex items-center justify-center text-xl mb-4">
+              <i class="fa-solid fa-wheat-awn"></i>
+            </div>
+            <h3 class="text-lg font-extrabold text-forest">Machokoto Fradreck</h3>
+            <p class="text-xs font-extrabold uppercase tracking-wide text-deepgreen mt-1 mb-3">Co-Founder • Agronomy &amp; Crop Lead</p>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Directs crop health protocols, climate-smart agronomy guidelines, soil testing standards, and agrodealer input quality vetting.
+            </p>
+          </div>
+          <div class="w-10 h-1 bg-limebrand rounded-full mt-5"></div>
+        </div>
+
+        <!-- Leader 4 -->
+        <div class="bg-white border border-emerald-200 rounded-2xl p-6 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-deepgreen text-limebrand flex items-center justify-center text-xl mb-4">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h3 class="text-lg font-extrabold text-forest">Munyarari Lincoln T.K</h3>
+            <p class="text-xs font-extrabold uppercase tracking-wide text-deepgreen mt-1 mb-3">Co-Founder • Technology &amp; IT Lead</p>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Architects the AGRIPOT digital platform, trilingual AI advisory tools, digital recordkeeping systems, and offline SMS/mobile infrastructure.
+            </p>
+          </div>
+          <div class="w-10 h-1 bg-limebrand rounded-full mt-5"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. CONTACT & SERVICE INQUIRY SECTION -->
+  <section id="contact" class="py-16 md:py-24 bg-forest text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <!-- Left Corporate Contact Info -->
+        <div class="lg:col-span-5 space-y-6">
+          <div>
+            <p class="text-xs font-extrabold uppercase tracking-widest text-limebrand mb-2">Get In Touch</p>
+            <h2 class="text-3xl sm:text-4xl font-extrabold leading-tight">
+              Work With TECHNOAGRICPRA
+            </h2>
+            <p class="text-sm sm:text-base text-emerald-100/90 mt-3 leading-relaxed">
+              Whether you need on-farm agronomic or livestock advisory, want to register on AGRIPOT, or wish to partner as an input supplier, off-taker, or institution—our Marondera team is ready to assist.
+            </p>
+          </div>
+
+          <div class="space-y-4 pt-2">
+            <div class="bg-deepgreen/90 border border-emerald-800 rounded-2xl p-4 flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-forest text-limebrand flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <h3 class="text-sm font-extrabold text-white">Headquarters</h3>
+                <p class="text-xs sm:text-sm text-emerald-100/85 mt-0.5">
+                  Marondera, Mashonaland East Province, Zimbabwe
+                </p>
+              </div>
+            </div>
+
+            <div class="bg-deepgreen/90 border border-emerald-800 rounded-2xl p-4 flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-forest text-limebrand flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-building"></i>
+              </div>
+              <div>
+                <h3 class="text-sm font-extrabold text-white">Corporate Registration</h3>
+                <p class="text-xs sm:text-sm text-emerald-100/85 mt-0.5">
+                  TECHNOAGRICPRA (PVT) LTD (t/a TECHNOAGRI PRECISION) • Entity No. 119164A0562026
+                </p>
+              </div>
+            </div>
+
+            <div class="bg-deepgreen/90 border border-emerald-800 rounded-2xl p-4 flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-forest text-limebrand flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div>
+                <h3 class="text-sm font-extrabold text-white">Operating Hours</h3>
+                <p class="text-xs sm:text-sm text-emerald-100/85 mt-0.5">
+                  Monday – Friday: 08:00 – 17:00 CAT • Saturday Field Support: 08:00 – 13:00 CAT
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Service Inquiry Form -->
+        <div class="lg:col-span-7 bg-white text-forest rounded-3xl p-6 sm:p-10 shadow-2xl">
+          <h3 class="text-xl sm:text-2xl font-extrabold text-forest mb-1">Service Inquiry &amp; Registration Form</h3>
+          <p class="text-xs sm:text-sm text-slate-600 mb-6">Complete the form below and our field or partnerships coordinator will reach out promptly.</p>
+
+          <form id="contactForm" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="fullName" class="block text-xs font-extrabold uppercase text-forest mb-1.5">Full Name *</label>
+                <input id="fullName" type="text" required placeholder="e.g. Tendai Moyo" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-deepgreen" />
+              </div>
+              <div>
+                <label for="farmOrg" class="block text-xs font-extrabold uppercase text-forest mb-1.5">Farm Name / Organisation</label>
+                <input id="farmOrg" type="text" placeholder="e.g. Nyameni Farm / Agrodealer" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-deepgreen" />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="inquiryType" class="block text-xs font-extrabold uppercase text-forest mb-1.5">How Can We Help? *</label>
+                <select id="inquiryType" required class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm bg-white focus:outline-none focus:border-deepgreen">
+                  <option value="Farmer Onboarding (Free Basic / Premium)">Farmer Onboarding (Free Basic / Premium)</option>
+                  <option value="Private Crop & Agronomy Extension">Private Crop &amp; Agronomy Extension</option>
+                  <option value="Livestock & Animal Health Advisory">Livestock &amp; Animal Health Advisory</option>
+                  <option value="Agrodealer / Input Supplier Partnership">Agrodealer / Input Supplier Partnership</option>
+                  <option value="Produce Off-Take / Logistics Collaboration">Produce Off-Take / Logistics Collaboration</option>
+                  <option value="Institutional / Cooperative Inquiry">Institutional / Cooperative Inquiry</option>
+                </select>
+              </div>
+              <div>
+                <label for="contactDetail" class="block text-xs font-extrabold uppercase text-forest mb-1.5">Phone / WhatsApp or Email *</label>
+                <input id="contactDetail" type="text" required placeholder="+263 77 ... or name@example.com" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-deepgreen" />
+              </div>
+            </div>
+
+            <div>
+              <label for="districtLocation" class="block text-xs font-extrabold uppercase text-forest mb-1.5">District / Ward Location</label>
+              <input id="districtLocation" type="text" placeholder="e.g. Marondera, Goromonzi, Murehwa, Mutoko, Harare..." class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-deepgreen" />
+            </div>
+
+            <div>
+              <label for="messageBody" class="block text-xs font-extrabold uppercase text-forest mb-1.5">Message / Farm Requirements *</label>
+              <textarea id="messageBody" rows="3" required placeholder="Tell us about your crops, livestock, input needs, or partnership goals..." class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-deepgreen"></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-3.5 rounded-xl bg-forest text-limebrand font-extrabold text-sm sm:text-base hover:bg-deepgreen transition shadow-md">
+              Send Inquiry <i class="fa-solid fa-paper-plane ml-2"></i>
+            </button>
+          </form>
+
+          <!-- Client-Side Confirmation Banner -->
+          <div id="confirmationBanner" class="hidden mt-5 bg-mintlight border-2 border-deepgreen rounded-2xl p-4 text-forest">
+            <div class="flex items-start gap-3">
+              <i class="fa-solid fa-circle-check text-deepgreen text-xl mt-0.5"></i>
+              <div>
+                <p class="text-sm font-extrabold">Inquiry Received — Thank You!</p>
+                <p id="confirmationText" class="text-xs sm:text-sm text-forest/90 mt-1"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CORPORATE FOOTER -->
+  <footer class="bg-[#061A13] text-emerald-200/80 py-12 border-t border-emerald-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-emerald-900/80 text-xs sm:text-sm">
+        <div class="space-y-2">
+          <p class="font-extrabold text-white text-base">TECHNOAGRICPRA (PVT) LTD</p>
+          <p class="text-limebrand font-semibold text-xs uppercase tracking-wider">Operating as TECHNOAGRI PRECISION</p>
+          <p class="text-xs text-emerald-200/75 leading-relaxed">
+            Private agricultural extension, livestock management, climate-smart consulting, and digital farming solutions via the AGRIPOT platform.
+          </p>
+        </div>
+
+        <div class="space-y-2">
+          <p class="font-extrabold text-white text-sm uppercase tracking-wider">Quick Links</p>
+          <ul class="space-y-1.5 text-xs">
+            <li><a href="#about" class="hover:text-limebrand transition">About Us</a></li>
+            <li><a href="#services" class="hover:text-limebrand transition">Agricultural Services</a></li>
+            <li><a href="#agripot" class="hover:text-limebrand transition">AGRIPOT Platform</a></li>
+            <li><a href="#leadership" class="hover:text-limebrand transition">Leadership Team</a></li>
+            <li><a href="#contact" class="hover:text-limebrand transition">Contact &amp; Consultations</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <p class="font-extrabold text-white text-sm uppercase tracking-wider">Head Office</p>
+          <p class="text-xs text-emerald-200/85">Marondera, Mashonaland East Province, Zimbabwe</p>
+          <p class="text-xs text-emerald-200/75">Registration No: 119164A0562026</p>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-emerald-300/65">
+        <p>&copy; 2026 TECHNOAGRICPRA (PVT) LTD. All rights reserved.</p>
+        <p>Financial &amp; payment settlement services on AGRIPOT are delivered through licensed financial institution partners.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CLIENT-SIDE INTERACTIVITY -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Mobile Navigation Drawer
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+        mobileMenu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        });
+      }
+
+      // Service Inquiry Form Handler
+      const contactForm = document.getElementById('contactForm');
+      const confirmationBanner = document.getElementById('confirmationBanner');
+      const confirmationText = document.getElementById('confirmationText');
+
+      if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const name = document.getElementById('fullName').value.trim();
+          const inquiry = document.getElementById('inquiryType').value;
+          const contact = document.getElementById('contactDetail').value.trim();
+          const location = document.getElementById('districtLocation').value.trim();
+
+          const locPhrase = location ? ` in ${location}` : '';
+          confirmationText.textContent = `Thank you, ${name}. Your inquiry regarding "${inquiry}"${locPhrase} has been recorded. Our Marondera office will contact you via ${contact}.`;
+          confirmationBanner.classList.remove('hidden');
+          contactForm.reset();
+        });
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+technoagricpra-corporate-website/
+├── index.html       # Exact corporate website design preserved verbatim
+├── README.md        # Project overview, brand color tokens, sections, and Git/GitHub Pages setup guide
+├── LICENSE          # Proprietary corporate copyright license for TECHNOAGRICPRA (PVT) LTD
+└── .gitignore       # Exclusions for OS metadata (.DS_Store, Thumbs.db), IDE folders, logs, and .env files
